@@ -27,7 +27,7 @@ end
 def list_of_directors(source)
   director_index = 0 
   while index < directors_database.length do 
-    directors_database[index]
+    directors_database[:name][index]
     index += 1 
 end
 
@@ -41,6 +41,13 @@ def total_gross(source)
     director_index += 1
   end
   result
+end
+
+def list_of_directors(source)
+  director_index = 0 
+  while index < directors_database.length do 
+    directors_database[:name][index]
+    index += 1 
 end
   
   
